@@ -107,18 +107,24 @@
 
 /* !============Media Queries============ */
 @media (max-width: 768px) {
+  .myNav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
   .myNav .buttons,
   .myNav .startBtn,
   .myNav .search-icon {
     display: none !important;
   }
 
-  .myNav .container {
+  .nav-wrapper {
     flex-wrap: wrap;
-    justify-content: center;
-    padding-inline: 0.5rem;
+    justify-content: space-between;
   }
-
   .logo-img {
     width: 2rem;
     height: 2rem;

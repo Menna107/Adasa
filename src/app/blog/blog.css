@@ -365,13 +365,11 @@
 }
 
 /* !============Media Queries============ */
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 992px) {
-}
 
 @media (max-width: 768px) {
+  .search-wrapper {
+    margin-inline: auto;
+  }
   .filterBtns {
     justify-content: center;
     gap: 10px;
@@ -426,7 +424,4 @@
   .view-toggle {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 576px) {
 }
