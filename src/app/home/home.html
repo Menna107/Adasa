@@ -273,8 +273,10 @@
       <!-- Content -->
       <div class="row mt-4 g-4">
         @for (article of latestArticle; track article.id) {
-          <div class="col-md-4">
-            <div class="latestArticle-card d-flex flex-column overflow-hidden position-relative">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="latestArticle-card h-100 d-flex flex-column overflow-hidden position-relative"
+            >
               <!-- Article type -->
               <div class="article-type position-absolute">{{ article.category }}</div>
 
