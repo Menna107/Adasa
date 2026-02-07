@@ -106,10 +106,34 @@
 }
 
 /* !============Media Queries============ */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .myNav .buttons,
   .myNav .startBtn,
   .myNav .search-icon {
     display: none !important;
+  }
+
+  .myNav .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 0.5rem;
+  }
+
+  .logo-img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo-img img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo-title .title {
+    font-size: 1rem;
+  }
+
+  .logo-title .subtitle {
+    font-size: 0.625rem;
   }
 }
