@@ -584,6 +584,8 @@ export class Blog implements OnInit {
 
     if (category) {
       this.filterArticles(category);
+    } else {
+      this.filterArticles('جميع المقالات');
     }
   }
 
