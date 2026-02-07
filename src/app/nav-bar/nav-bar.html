@@ -1,0 +1,49 @@
+<nav class="navbar myNav navbar-expand-sm fixed-top">
+  <div class="container px-4 d-flex justify-content-between align-items-center">
+    <!-- Right part (Logo) -->
+    <div class="logo d-flex gap-3">
+      <div class="logo-img">
+        <img src="/images/logo.png" alt="Adasa logo" />
+      </div>
+      <div class="logo-title d-flex flex-column">
+        <span class="title">عدسة</span>
+        <span class="subtitle">عالم التصوير الفوتوغرافي </span>
+      </div>
+    </div>
+
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- middle Part (Links) -->
+    <div class="myLinks collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0 d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/home">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/blog">المدونة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/about">من نحن</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- left part (search) -->
+    <div class="buttons d-flex gap-3 justify-content-center align-items-center my-2 my-lg-0">
+      <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <button routerLink="/blog" class="startBtn btn my-2 my-sm-0" type="submit">
+        ابدأ القراءة
+      </button>
+    </div>
+  </div>
+</nav>

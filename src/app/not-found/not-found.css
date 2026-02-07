@@ -1,0 +1,193 @@
+.grayText {
+  color: #737373;
+}
+
+/* Button */
+.discover {
+  background: #f66f14;
+  background: linear-gradient(
+    90deg,
+    rgba(246, 111, 20, 1) 31%,
+    rgba(242, 102, 17, 1) 71%,
+    rgba(236, 92, 13, 1) 94%
+  );
+}
+
+.discover:hover {
+  transform: translateY(-5px);
+}
+
+/* ^Background Style */
+.hero-bg {
+  position: relative;
+  background-color: #0b0b0b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+/* ^Shadow style */
+.shadow1 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 288px;
+  height: 288px;
+  background-color: #211209;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.shadow2 {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  width: 384px;
+  height: 384px;
+  background-color: rgba(253, 224, 71, 0.05);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation-delay: -2s;
+}
+
+/* ^ Content Style */
+.hero-content h1 .coloredText {
+  font-size: 180px;
+  font-weight: 900;
+  line-height: 180px;
+  background: #f9911b;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 145, 27, 1) 8%,
+    rgba(250, 152, 29, 1) 46%,
+    rgba(250, 168, 32, 1) 94%
+  );
+
+  text-shadow: 0 0 10px rgba(255, 150, 50, 0.15);
+  background-clip: text;
+  color: transparent;
+}
+
+.face-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+/* face */
+.sad-face {
+  width: 112px;
+  height: 112px;
+  color: #ff8904cc;
+  background-color: #402608;
+  padding: 10px;
+  border: 1px solid rgba(255, 137, 4, 0.4);
+  border-radius: 50%;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.dot1 {
+  position: absolute;
+  background-color: #edaf00;
+  bottom: 20px;
+  left: 2px;
+  animation: glow 1.4s infinite ease-in-out;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.dot2 {
+  position: absolute;
+  background-color: #ff8904;
+  top: 4px;
+  right: 4px;
+  animation: jump 1s infinite ease-in-out;
+  border-radius: 5px;
+  width: 17px;
+  height: 17px;
+}
+
+/* animations */
+@keyframes glow {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(6px, -6px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.hero-content .description {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Buttons */
+.hero-content .buttons a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  padding: 17px 30px;
+  border-radius: 28px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.hero-content .buttons .knowMore {
+  background-color: transparent;
+  border: 1px solid #1f1f1f;
+}
+
+.hero-content .buttons .knowMore:hover {
+  border-color: #ff6900;
+  color: #ff6900;
+  background-color: #2a180b;
+}

@@ -1,0 +1,115 @@
+/* ^===== Navbar ===== */
+.myNav {
+  background-color: var(--bg-color) !important;
+  padding-block: 15px;
+}
+
+/* ^===== Logo ===== */
+.logo-title .title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+.logo-title .subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+/* ^===== Logo Image ===== */
+.logo-img {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+
+/* Hover effect */
+.logo:hover .logo-img img {
+  scale: 1.05;
+}
+
+/*^ ===== Nav Links ===== */
+.myLinks ul {
+  border: 1px solid #242424;
+  border-radius: 25px;
+  padding: 6px;
+}
+.myLinks ul li a {
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.myLinks ul li a:hover {
+  color: white !important;
+}
+/* Active link */
+.nav-link.active {
+  background: #ff6800;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 104, 0, 1) 8%,
+    rgba(253, 91, 0, 1) 46%,
+    rgba(246, 76, 0, 1) 94%
+  );
+
+  color: white !important;
+  border-radius: 25px;
+}
+
+/*^ ===== Search + Button ===== */
+.search-icon {
+  color: #8c8c8c;
+  padding: 9px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s;
+  border: 1px solid var(--bg-color);
+}
+.search-icon:hover {
+  color: #ff6800;
+  border: 1px solid #1f1f1f;
+}
+
+.startBtn {
+  background: #f76f15;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 111, 21, 1) 8%,
+    rgba(243, 104, 18, 1) 46%,
+    rgba(237, 93, 14, 1) 94%
+  );
+
+  color: white !important;
+  padding: 14px 32px;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.startBtn:hover {
+  transform: translateY(-3px);
+}
+
+/* !============Media Queries============ */
+@media (max-width: 768px) {
+  .myNav .buttons,
+  .myNav .startBtn,
+  .myNav .search-icon {
+    display: none !important;
+  }
+}

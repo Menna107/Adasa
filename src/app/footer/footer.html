@@ -1,0 +1,124 @@
+<footer class="footer-section py-5 position-relative">
+  <!-- Background Shadow -->
+  <div class="shadow1"></div>
+  <div class="shadow2"></div>
+
+  <div class="container py-3">
+    <div class="row g-5 pb-5">
+      <!-- Brand -->
+      <div class="col-lg-3">
+        <div class="brand d-flex align-items-center gap-3 mb-3">
+          <div class="logo d-flex justify-content-center align-items-center">ع</div>
+          <h4>عدسة</h4>
+        </div>
+
+        <p class="footer-text">
+          مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير
+          مهاراتكم.
+        </p>
+
+        <!-- social links -->
+        <div class="social d-flex gap-3 mt-3">
+          <a href="https://twitter.com/adasah" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="https://github.com/adasah" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://linkedin.com/company/adasah" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://youtube.com/@adasah" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div class="col-lg-2 offset-1">
+        <h5 class="footer-title">استكشف</h5>
+
+        <ul class="footer-links">
+          <li>
+            <a routerLink="/home">
+              <i class="fa-solid fa-angle-left"></i>
+              الرئيسية</a
+            >
+          </li>
+          <li>
+            <a routerLink="/blog">
+              <i class="fa-solid fa-angle-left"></i>
+              المدونة</a
+            >
+          </li>
+          <li>
+            <a routerLink="/about">
+              <i class="fa-solid fa-angle-left"></i>
+              من نحن</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-lg-2 offset-1">
+        <h5 class="footer-title">التصنيفات <span></span></h5>
+        <ul class="footer-links">
+          <li>
+            <a [routerLink]="['/blog']" [queryParams]="{ category: 'إضاءة' }">
+              <i class="fa-solid fa-angle-left"></i>
+              إضاءة</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="['/blog']" [queryParams]="{ category: 'بورتريه' }">
+              <i class="fa-solid fa-angle-left"></i>
+              بورتريه</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="['/blog']" [queryParams]="{ category: 'مناظر طبيعية' }">
+              <i class="fa-solid fa-angle-left"></i>
+              مناظر طبيعية</a
+            >
+          </li>
+          <li>
+            <a [routerLink]="['/blog']" [queryParams]="{ category: 'تقنيات' }">
+              <i class="fa-solid fa-angle-left"></i>
+              تقنيات</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!--  Form  -->
+      <div class="col-lg-3">
+        <h5 class="footer-title">ابقى على اطلاع <span></span></h5>
+        <p class="footer-text">اشترك للحصول على أحدث المقالات والتحديثات.</p>
+
+        <form class="footer-form mt-2 d-flex flex-column gap-3">
+          <input
+            type="email"
+            class="form-control footer-input"
+            placeholder="أدخل بريدك الإلكتروني"
+          />
+          <button class="btn footer-btn">اشترك</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex justify-content-between flex-wrap gap-3">
+      <div class="copy">
+        © 2026 عدسة. صنع بكل <span><i class="fa-solid fa-heart"></i></span> جميع الحقوق محفوظة.
+      </div>
+
+      <div class="links">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">شروط الخدمة</a>
+      </div>
+    </div>
+  </div>
+</footer>

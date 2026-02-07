@@ -1,0 +1,152 @@
+.grayText {
+  color: #737373;
+}
+
+/* Badge Style: */
+.badge {
+  background-color: #24160b;
+  color: #d4d4d4;
+  padding: 7px 17px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border: 1px solid rgba(255, 137, 4, 0.4);
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.badge .icon {
+  color: #ff6900;
+  font-size: 7px;
+  animation: pulse 2s infinite;
+  position: relative;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+/* ^Background Style */
+.hero-bg {
+  position: relative;
+  background-color: #0b0b0b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  max-width: 750px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+/* ^Shadow style */
+.shadow1 {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  width: 288px;
+  height: 288px;
+  background-color: #211209;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.shadow2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 384px;
+  height: 384px;
+  background-color: rgba(253, 224, 71, 0.05);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation-delay: -2s;
+}
+
+/* ^ Content Style */
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.hero-content h1 .coloredText {
+  background: #f9911b;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 145, 27, 1) 8%,
+    rgba(250, 152, 29, 1) 46%,
+    rgba(250, 168, 32, 1) 94%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content .description {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+/* Cards: */
+.hero-content .card {
+  flex: 1 1 140px;
+  width: 200px;
+  background-color: #141414;
+  border: 1px solid #1f1f1f;
+  padding: 24px 30px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.hero-content .card:hover {
+  scale: 1.05;
+}
+
+.hero-content .card i {
+  color: #f97200;
+  font-size: 24px;
+  font-weight: 900;
+}
+.hero-content .card .highlighted {
+  background: #f9911b;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 145, 27, 1) 8%,
+    rgba(250, 152, 29, 1) 46%,
+    rgba(250, 168, 32, 1) 94%
+  );
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.hero-content .card .grayText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
